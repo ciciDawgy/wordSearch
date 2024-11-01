@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Search Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border: 1px solid #333;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .word-list {
+            margin-top: 20px;
+        }
+        .word-list li {
+            list-style: none;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Word Search</h1>
+    <table id="wordGrid"></table>
+    <div class="word-list">
+        <h3>Words to Find:</h3>
+        <ul id="wordsToFind"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
